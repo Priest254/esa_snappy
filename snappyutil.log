@@ -1,0 +1,14 @@
+INFO: Installing from Java module 'C:\Users\Administrator\AppData\Roaming\SNAP\modules\eu-esa-snap-esa-snappy.jar'
+INFO: Installing jpy...
+ERROR: The module 'jpy' is required to run snappy, but no binary 'jpy' wheel matching the pattern
+'jpy-{version}-cp27-{abi_tag}-win32.whl' could be found.
+You can try to build a 'jpy' wheel yourself, then copy it into
+"C:\Program Files\esa-snap\esa_snappy", and then run the configuration again.
+Unzip the jpy sources in C:\Program Files\esa-snap\esa_snappy/jpy-<version>.zip, then
+  $ cd jpy-<version>
+  $ python setup.py bdist_wheel
+  $ cp dist/*.whl "C:\Program Files\esa-snap\esa_snappy"
+Or get the source code from https://github.com/bcdev/jpy and follow the build instructions:
+  $ git clone https://github.com/bcdev/jpy.git
+  $ cd jpy
+ERROR: Configuration failed with exit code 10
